@@ -101,6 +101,7 @@ export default function Gallery() {
                   alt={photo.alt}
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 256px, 320px"
                 />
                  {/* Hover Hint */}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />

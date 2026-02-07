@@ -40,7 +40,7 @@ export default function LoveCoupons() {
           onClick={openGift}
           whileHover={{ scale: 1.1, rotate: [0, -5, 5, -5, 5, 0] }}
           whileTap={{ scale: 0.95 }}
-          className="relative group p-8"
+          className="relative group p-8 inline-flex flex-col items-center"
         >
              {/* Glowing Effect */}
            <div className="absolute inset-0 bg-[#d4af37] opacity-20 blur-3xl rounded-full group-hover:opacity-40 transition-opacity" />
