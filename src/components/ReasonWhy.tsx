@@ -5,18 +5,18 @@ import { motion } from "framer-motion";
 const reasons = [
   {
     id: 1,
-    title: "Your Smile",
-    description: "It lights up my darkest days and makes everything feel okay.",
+    title: "Senyummu",
+    description: "Itu menerangi hari-hariku yang gelap dan meyakinkanku bahwa segalanya akan baik-baik aja apabila kita selalu bersama.",
   },
   {
     id: 2,
-    title: "Your Kindness",
-    description: "The way you care for others inspires me to be a better person.",
+    title: "Kebaikanmu",
+    description: "Caramu peduli pada orang lain menginspirasiku untuk menjadi orang yang lebih baik.",
   },
   {
     id: 3,
-    title: "Our Memories",
-    description: "Every moment spent with you is a treasure I keep safe in my heart.",
+    title: "Kenangan Kita",
+    description: "Menjalani hari bersamamu tidak pernah terasa melelahkan, entah harus berjalan 1000km pun aku sanggup jika itu bersamamu.",
   },
 ];
 

@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import FlyingHearts from "@/components/FlyingHearts";
 
-const letterContent = `My Dearest,
+const letterContent = `Sayangku,
 
-From the moment our paths crossed, my world has been brighter. 
-Your laughter is my favorite melody, and your happiness is my greatest goal.
-Every day with you feels like a beautiful dream I never want to wake up from.
+Sejak saat jalan kita bertemu, duniaku menjadi lebih cerah. 
+Tawamu adalah melodi favoritku, dan kebahagiaanmu adalah tujuan terbesarku.
+Setiap hari bersamamu terasa seperti mimpi indah yang tak ingin kuakhiri.
 
-Thank you for being my partner, my best friend, and my love.
+Terima kasih telah menjadi pasanganku, sahabat terbaikku, dan cintaku.
 
-Forever yours,
-[Your Name]`;
+Selamanya milikmu,
+Rizal Wahyu`;
 
 export default function Letter() {
   const [displayedText, setDisplayedText] = useState("");

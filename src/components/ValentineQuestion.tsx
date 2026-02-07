@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Heart } from "lucide-react";
+import GoldBalloons from "./GoldBalloons";
 
 export default function ValentineQuestion() {
   const [noButtonPos, setNoButtonPos] = useState({ x: 0, y: 0 });
@@ -66,6 +67,11 @@ export default function ValentineQuestion() {
         ))}
       </AnimatePresence>
 
+      {/* Gold Balloons Background Layer */}
+      <AnimatePresence>
+        {isAccepted && <GoldBalloons />}
+      </AnimatePresence>
+
       {!isAccepted ? (
         <motion.div
            initial={{ opacity: 0, scale: 0.9 }}
@@ -103,15 +109,8 @@ export default function ValentineQuestion() {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="z-10 text-center"
+          className="z-10 text-center relative"
         >
-          <motion.div 
-            animate={{ scale: [1, 1.2, 1] }}
-            transition={{ repeat: Infinity, duration: 1.5 }}
-            className="text-8xl mb-8 text-[#d4af37]"
-          >
-            ❤️
-          </motion.div>
           <h2 className="text-5xl md:text-7xl font-serif text-[#d4af37] mb-6">
             Yayy!
           </h2>

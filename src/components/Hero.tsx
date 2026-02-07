@@ -63,7 +63,7 @@ export default function Hero() {
            transition={{ duration: 2, delay: 1.5 }}
            className="mt-8 font-light text-[#fdf5e6]/80 text-lg md:text-xl tracking-wide"
         >
-            To the one who holds my heart.
+            Untuk seseorang yang selalu ada di hatiku.
         </motion.p>
       </div>
 

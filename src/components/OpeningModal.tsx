@@ -46,7 +46,7 @@ export default function OpeningModal({ onOpen }: OpeningModalProps) {
               transition={{ duration: 1, delay: 0.5 }}
               className="mb-8 text-4xl font-serif text-[#fdf5e6] md:text-5xl"
             >
-              For You
+              For My Beautiful Girl
             </motion.h1>
 
             <motion.button

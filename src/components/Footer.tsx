@@ -14,7 +14,7 @@ export default function Footer() {
         className="flex flex-col items-center justify-center gap-2 relative z-10"
       >
         <p className="text-[#fdf5e6]/60 font-light text-sm tracking-widest">
-            Made with <span className="text-red-500 animate-pulse">❤️</span> by [Your Name]
+            Made with <span className="text-red-500 animate-pulse">❤️</span> by Rizal Wahyu
         </p>
         <p className="text-[#d4af37]/40 text-xs uppercase tracking-[0.2em]">
             Valentine's Day 2026

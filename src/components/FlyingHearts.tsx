@@ -44,7 +44,7 @@ export default function FlyingHearts() {
           className="absolute bottom-0"
         >
           <Heart 
-            className="text-red-500/20 fill-red-500/10" 
+            className="text-[#d4af37]/60 fill-[#d4af37]/40 drop-shadow-[0_0_5px_rgba(212,175,55,0.4)]" 
             size={Math.random() * 20 + 10} 
           />
         </motion.div>

@@ -19,8 +19,8 @@ const greatVibes = Great_Vibes({
 });
 
 export const metadata: Metadata = {
-  title: "A Valentine's Surprise",
-  description: "A romantic cinematic experience for someone special.",
+  title: "Vow to My Beautiful Girl",
+  description: "A digital love letter from Rizal Wahyu.",
 };
 
 export default function RootLayout({
