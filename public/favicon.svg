@@ -1,0 +1,12 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M32 54C32 54 8 38 8 22C8 16.4772 12.4772 12 18 12C22.3333 12 26 14.6667 32 20C38 14.6667 41.6667 12 46 12C51.5228 12 56 16.4772 56 22C56 38 32 54 32 54Z" fill="url(#goldGradient)"/>
+  <path d="M32 54C32 54 8 38 8 22C8 16.4772 12.4772 12 18 12C22.3333 12 26 14.6667 32 20C38 14.6667 41.6667 12 46 12C51.5228 12 56 16.4772 56 22C56 38 32 54 32 54Z" stroke="#996515" stroke-width="1" stroke-opacity="0.3"/>
+  <ellipse cx="22" cy="20" rx="4" ry="6" fill="white" fill-opacity="0.25" transform="rotate(-25 22 20)"/>
+  <defs>
+    <radialGradient id="goldGradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32 28) rotate(90) scale(32)">
+      <stop offset="0" stop-color="#FDF5E6"/>
+      <stop offset="0.5" stop-color="#D4AF37"/>
+      <stop offset="1" stop-color="#996515"/>
+    </radialGradient>
+  </defs>
+</svg>
