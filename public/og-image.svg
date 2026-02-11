@@ -1,0 +1,31 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#050505"/>
+  
+  <!-- Radial gradient background -->
+  <circle cx="600" cy="315" r="400" fill="url(#bgGradient)" opacity="0.2"/>
+  
+  <!-- Large centered heart -->
+  <g transform="translate(600, 315)">
+    <path d="M0 100C0 100 -120 -60 -120 -120C-120 -150 -100 -170 -70 -170C-45 -170 -25 -155 0 -130C25 -155 45 -170 70 -170C100 -170 120 -150 120 -120C120 -60 0 100 0 100Z" fill="url(#heartGradient)"/>
+    <path d="M0 100C0 100 -120 -60 -120 -120C-120 -150 -100 -170 -70 -170C-45 -170 -25 -155 0 -130C25 -155 45 -170 70 -170C100 -170 120 -150 120 -120C120 -60 0 100 0 100Z" stroke="#996515" stroke-width="2" stroke-opacity="0.3"/>
+    <ellipse cx="-40" cy="-90" rx="20" ry="30" fill="white" fill-opacity="0.25" transform="rotate(-25 -40 -90)"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="600" y="480" font-family="serif" font-size="48" fill="#D4AF37" text-anchor="middle" font-weight="300">
+    Happy Valentine's Day
+  </text>
+  
+  <defs>
+    <radialGradient id="bgGradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4a0404"/>
+      <stop offset="1" stop-color="#050505"/>
+    </radialGradient>
+    <radialGradient id="heartGradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 -50) scale(150)">
+      <stop offset="0" stop-color="#FDF5E6"/>
+      <stop offset="0.5" stop-color="#D4AF37"/>
+      <stop offset="1" stop-color="#996515"/>
+    </radialGradient>
+  </defs>
+</svg>

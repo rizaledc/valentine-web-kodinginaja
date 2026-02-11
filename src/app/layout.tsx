@@ -27,6 +27,25 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.svg",
   },
+  openGraph: {
+    title: "Vow to My Beautiful Girl",
+    description: "A digital love letter from Rizal Wahyu.",
+    images: [
+      {
+        url: "/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "Happy Valentine's Day - Gold Heart",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vow to My Beautiful Girl",
+    description: "A digital love letter from Rizal Wahyu.",
+    images: ["/og-image.svg"],
+  },
 };
 
 export default function RootLayout({
