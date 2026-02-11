@@ -6,15 +6,26 @@ import { Heart } from "lucide-react";
 import GoldBalloons from "./GoldBalloons";
 
 export default function ValentineQuestion() {
-  const [noButtonPos, setNoButtonPos] = useState({ x: 0, y: 0 });
   const [isAccepted, setIsAccepted] = useState(false);
   const [risingHearts, setRisingHearts] = useState<{ id: number; left: number; size: number; duration: number }[]>([]);
+  const [noClickCount, setNoClickCount] = useState(0);
 
-  const moveNoButton = () => {
-    // Random position within a constrained area
-    const x = Math.random() * 300 - 150;
-    const y = Math.random() * 300 - 150;
-    setNoButtonPos({ x, y });
+  const phrases = [
+    "No",
+    "Are you sure?",
+    "Really sure?",
+    "Pikir-pikir dulu...",
+    "Yahhh kok gitu? :(",
+    "Please? 👉👈",
+    "Jangan No dong...",
+    "I'll be very sad...",
+    "Think about it again!",
+    "Give it a chance?",
+    "Last chance to say Yes!",
+  ];
+
+  const handleNoClick = () => {
+    setNoClickCount((prev) => prev + 1);
   };
 
   const handleAccept = () => {
@@ -89,19 +100,16 @@ export default function ValentineQuestion() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               onClick={handleAccept}
-              className="px-12 py-4 bg-[#d4af37] text-black font-serif text-xl rounded-full shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_40px_rgba(212,175,55,0.6)] transition-all"
+              className="px-12 py-4 bg-[#d4af37] text-black font-serif text-xl rounded-full shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_40px_rgba(212,175,55,0.6)] transition-all z-20"
             >
               YES
             </motion.button>
 
             <motion.button
-              onHoverStart={moveNoButton}
-              onClick={moveNoButton}
-              animate={{ x: noButtonPos.x, y: noButtonPos.y }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="px-12 py-4 bg-transparent border border-[#fdf5e6]/30 text-[#fdf5e6]/50 font-serif text-xl rounded-full hover:bg-[#fdf5e6]/10 transition-colors cursor-pointer"
+              onClick={handleNoClick}
+              className="px-12 py-4 bg-transparent border border-[#fdf5e6]/30 text-[#fdf5e6]/50 font-serif text-xl rounded-full hover:bg-[#fdf5e6]/10 transition-colors cursor-pointer whitespace-nowrap"
             >
-              No
+              {phrases[noClickCount % phrases.length]}
             </motion.button>
           </div>
         </motion.div>

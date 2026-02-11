@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import confetti from "canvas-confetti";
 
-// Generate array of 10 photos
-const photos = Array.from({ length: 10 }, (_, i) => ({
-  src: `/images/photo${i + 1}.webp`,
+// Generate array of 12 photos
+const photos = Array.from({ length: 12 }, (_, i) => ({
+  src: `/images/ft${i + 1}.jpeg`,
   alt: `Our Memory ${i + 1}`,
   id: i + 1,
 }));
