@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" translate="no">
       <body
         className={`${inter.variable} ${playfair.variable} ${greatVibes.variable} antialiased`}
       >
